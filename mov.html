@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Modern Movies</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .movie-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(33.333% - 40px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .movie-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .movie-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .movie-card h2 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+            color: #2c3e50;
+        }
+        .movie-card p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .movie-card .genre {
+            color: #1abc9c;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .movie-card {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .movie-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Best Modern Movies</h1>
+        <p>Explore the greatest films of the last decade</p>
+    </header>
+
+    <nav>
+        <a href="#top-rated">Top Rated</a>
+        <a href="#action">Action</a>
+        <a href="#drama">Drama</a>
+        <a href="#sci-fi">Sci-Fi</a>
+        <a href="#comedy">Comedy</a>
+    </nav>
+
+    <div class="container">
+        <!-- Movie 1 -->
+        <div id="top-rated" class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg" alt="Parasite">
+            <h2>Parasite (2019)</h2>
+            <p><strong>Director:</strong> Bong Joon-ho</p>
+            <p><strong>Genre:</strong> <span class="genre">Thriller, Drama</span></p>
+            <p>A poor family infiltrates a wealthy household, leading to unexpected consequences.</p>
+        </div>
+
+        <!-- Movie 2 -->
+        <div id="action" class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BN2EwM2I5OWMtMGQyMi00Zjg1LWJkNTctZTdjYTA4OGUwZjMyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="Mad Max: Fury Road">
+            <h2>Mad Max: Fury Road (2015)</h2>
+            <p><strong>Director:</strong> George Miller</p>
+            <p><strong>Genre:</strong> <span class="genre">Action, Adventure</span></p>
+            <p>In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler.</p>
+        </div>
+
+        <!-- Movie 3 -->
+        <div id="drama" class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BOGUyZDUxZjEtMmIzMC00MzlmLTg4MGItZWJmMzBhZjE0Mjc1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="The Social Network">
+            <h2>The Social Network (2010)</h2>
+            <p><strong>Director:</strong> David Fincher</p>
+            <p><strong>Genre:</strong> <span class="genre">Drama, Biography</span></p>
+            <p>The story of Facebook's creation and the legal battles that followed.</p>
+        </div>
+
+        <!-- Movie 4 -->
+        <div id="sci-fi" class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="Interstellar">
+            <h2>Interstellar (2014)</h2>
+            <p><strong>Director:</strong> Christopher Nolan</p>
+            <p><strong>Genre:</strong> <span class="genre">Sci-Fi, Adventure</span></p>
+            <p>A team of explorers travel through a wormhole in search of a new home for humanity.</p>
+        </div>
+
+        <!-- Movie 5 -->
+        <div id="comedy" class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_.jpg" alt="The Grand Budapest Hotel">
+            <h2>The Grand Budapest Hotel (2014)</h2>
+            <p><strong>Director:</strong> Wes Anderson</p>
+            <p><strong>Genre:</strong> <span class="genre">Comedy, Drama</span></p>
+            <p>The adventures of a legendary concierge and his protégé at a famous European hotel.</p>
+        </div>
+
+        <!-- Movie 6 -->
+        <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BYTdiOTIyZTQtNmQ1OS00NjZlLWIyMTgtYzk5Y2M3ZDVmMDk1XkEyXkFqcGdeQXVyMTAzMDg4NzU0._V1_.jpg" alt="Everything Everywhere All at Once">
+            <h2>Everything Everywhere All at Once (2022)</h2>
+            <p><strong>Director:</strong> Daniels</p>
+            <p><strong>Genre:</strong> <span class="genre">Sci-Fi, Comedy</span></p>
+            <p>A middle-aged Chinese immigrant is swept into a multiverse adventure.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Best Modern Movies. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
